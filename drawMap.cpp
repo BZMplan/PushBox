@@ -29,13 +29,13 @@ void drawMap() {
                     //人
                     cout << "| ";
                     break;
-                case 8:
-                    //站在目的地上的人
-                    cout << "| ";
-                    break;
                 case 7:
                     //箱子进入目的地
                     cout << "@ ";
+                    break;
+                case 8:
+                    //站在目的地上的人
+                    cout << "| ";
                     break;
             }
         }

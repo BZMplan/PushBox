@@ -108,7 +108,7 @@ void keyDown() {
                     map[i][j] = 3;
                     map[i][j - 1] = 5;
                 } else if (map[i][j - 1] == 3) {
-                    map[i][j] = 0;
+                    map[i][j] = 3;
                     map[i][j - 1] = 8;
                 } else if (map[i][j - 1] == 4) {
                     moveBox('a',i,j);
@@ -139,7 +139,7 @@ void keyDown() {
                     map[i][j] = 3;
                     map[i][j + 1] = 5;
                 } else if (map[i][j + 1] == 3) {
-                    map[i][j] = 0;
+                    map[i][j] = 3;
                     map[i][j + 1] = 8;
                 } else if (map[i][j + 1] == 4) {
                     moveBox('d',i,j);
