@@ -35,7 +35,7 @@ void drawMap() {
                     break;
                 case 7:
                     //箱子进入目的地
-                    cout << "@";
+                    cout << "@ ";
                     break;
             }
         }

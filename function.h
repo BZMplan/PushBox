@@ -8,5 +8,5 @@ using namespace std;
 void keyDown();
 void drawMap();
 void win();
-void moveBox(char direction ,int i);
+void moveBox(char direction,int i ,int j);
 #endif //PUSHBOX_FUNCTION_H

@@ -38,9 +38,9 @@ void keyDown() {
                     map[i][j] = 0;
                     map[i - 1][j] = 8;
                 } else if (map[i - 1][j] == 4) {
-                    moveBox('w',4);
+                    moveBox('w',i,j);
                 } else if (map[i - 1][j] == 7) {
-                    moveBox('w',7);
+                    moveBox('w',i,j);
                 }
             } else if (map[i][j] == 8) {
                 if (map[i - 1][j] == 0) {
@@ -50,9 +50,9 @@ void keyDown() {
                     map[i][j] = 3;
                     map[i - 1][j] = 8;
                 } else if (map[i - 1][j] == 4) {
-                    moveBox('w',4);
+                    moveBox('w',i,j);
                 } else if (map[i - 1][j] == 7) {
-                    moveBox('w',7);
+                    moveBox('w',i,j);
                 }
             }
             break;
@@ -68,9 +68,9 @@ void keyDown() {
                     map[i][j] = 0;
                     map[i + 1][j] = 8;
                 } else if (map[i + 1][j] == 4) {
-                    moveBox('s',4);
+                    moveBox('s',i,j);
                 } else if (map[i + 1][j] == 7) {
-                    moveBox('s',7);
+                    moveBox('s',i,j);
                 }
             } else if (map[i][j] == 8) {
                 if (map[i + 1][j] == 0) {
@@ -80,9 +80,9 @@ void keyDown() {
                     map[i][j] = 3;
                     map[i + 1][j] = 8;
                 } else if (map[i + 1][j] == 4) {
-                    moveBox('s',4);
+                    moveBox('s',i,j);
                 } else if (map[i + 1][j] == 7) {
-                    moveBox('s',7);
+                    moveBox('s',i,j);
                 }
             }
             break;
@@ -98,9 +98,9 @@ void keyDown() {
                     map[i][j] = 0;
                     map[i][j - 1] = 8;
                 } else if (map[i][j - 1] == 4) {
-                    moveBox('a',4);
+                    moveBox('a',i,j);
                 } else if (map[i][j - 1] == 7) {
-                    moveBox('a',7);
+                    moveBox('a',i,j);
                 }
             }
             if (map[i][j] == 8) {
@@ -111,9 +111,9 @@ void keyDown() {
                     map[i][j] = 0;
                     map[i][j - 1] = 8;
                 } else if (map[i][j - 1] == 4) {
-                    moveBox('a',4);
+                    moveBox('a',i,j);
                 } else if (map[i][j - 1] == 7) {
-                    moveBox('a',7);
+                    moveBox('a',i,j);
                 }
             }
             break;
@@ -129,9 +129,9 @@ void keyDown() {
                     map[i][j] = 0;
                     map[i][j + 1] = 8;
                 } else if (map[i][j + 1] == 4) {
-                    moveBox('d',4);
+                    moveBox('d',i,j);
                 } else if (map[i][j + 1] == 7) {
-                    moveBox('d',7);
+                    moveBox('d',i,j);
                 }
             }
             if (map[i][j] == 8) {
@@ -142,9 +142,9 @@ void keyDown() {
                     map[i][j] = 0;
                     map[i][j + 1] = 8;
                 } else if (map[i][j + 1] == 4) {
-                    moveBox('d',4);
+                    moveBox('d',i,j);
                 } else if (map[i][j + 1] == 7) {
-                    moveBox('d',7);
+                    moveBox('d',i,j);
                 }
             }
             break;
