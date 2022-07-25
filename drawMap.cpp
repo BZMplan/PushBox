@@ -3,6 +3,7 @@
 //
 //打印地图
 #include <iostream>
+#include <graphics.h>
 using namespace std;
 extern int map[8][8];
 void drawMap() {
@@ -12,10 +13,13 @@ void drawMap() {
                 case 0:
                     //路
                     cout << "  ";
+                    //路不用渲染图像
+                    clearrectangle(j*50,i*50,j*50+50,i*50+50);
                     break;
                 case 1:
                     //墙
                     cout << "# ";
+                    fillrectangle(j*50+1,i*50+1,j*50+50-1,i*50+50-1);
                     break;
                 case 3:
                     //目的地
@@ -24,6 +28,7 @@ void drawMap() {
                 case 4:
                     //箱子
                     cout << "* ";
+                    rectangle(j*50+1,i*50+1,j*50+50-1,i*50+50-1);
                     break;
                 case 5:
                     //人
