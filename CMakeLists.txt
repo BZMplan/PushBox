@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(PushBox)
 
 set(CMAKE_CXX_STANDARD 14)
-set(EasyX_ROOT D:/EasyX)
+set(EasyX_ROOT ./)
 set(EasyX_INC ${EasyX_ROOT}/include)
 set(EasyX_LINK ${EasyX_ROOT}/lib/x86)
 
