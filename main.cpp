@@ -8,9 +8,7 @@ extern int map[8][8];
 int main() {
     //UI创建窗口
     //单位px
-    initgraph(400, 400);
-    system("pause");
-
+    initgraph(800, 800);
     //关闭窗口
     while (1) {
         drawMap();
